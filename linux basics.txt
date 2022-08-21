@@ -1,0 +1,814 @@
+https://www.masswerk.at/jsuix/     -------This is the websites to learn linux no need to set anykind of virtual box
+
+
+
+Present working directory command:
+ 	pwd : path of current working directory
+
+Change directory command:
+	cd : go to home folder
+	cd.. : one step back/ Move a level up
+	cd - : Move to previous directory
+
+
+List commands:
+	ls : list command
+	ls -R : will list all the files in the sub-directories as well
+	ls -a : will show the hidden files
+	ls -al : will list the files and directories with detailed information
+
+Copy commands:
+	cp : copy the file
+	cp file_to_copy.txt new_file.txt : copies the file from the source to particular destination
+	cp -r dir_to_copy/ new_copy_dir/ : Copies the entire directory by using recursive flag
+	scp : copy the file securely b/w the servers
+
+Move and Remname commands:
+	mv : move the file
+	mv source_file destination_folder/ : To move the file from Source location to the Destination folder
+	mv old_file.txt new_named_file.txt : To Rename the old file to a new file
+
+Create Directories:
+	mkdir : it is used to make a new directory
+	mkdir images/ : To create image directories
+	mkdir -p movies/2004/ : To create the sub-directories using -p command	
+
+Remove Directories:
+	rmdir : it is used to remove the empty directory
+
+Remove Commands:
+
+	rm file_to_copy.txt : To remove the particular file
+	rm -r dir_to_remove/ : To remove the empty directory
+	rm -rf dir_with_content_to_remove/ : To  remove a directory with content inside of it, 
+					     you need to use the force (-f) and recursive flags
+
+Touch Command:
+	touch : used to create a new file on that directory
+
+Exit Command:
+	exit : used to exit from the shell
+
+Sudo(Super User do) Command:
+	sudo : sudo is commonly used to install software or to edit files outside the user’s home directory
+
+ifconfig Command : 
+	ifconfig : to check it conected to the IP
+
+Permission Command : 
+	-l : to check the permission
+
+Change the mode of file(Permissions):
+	chmod : to change the permission
+	chmod +x script : To change the mode of script(file)
+
+Grep Command: 
+	grep "linux" long.txt : to check the specified character in the specified file
+
+Shutdowm Command:
+	shutdown now : used to shut down the device right now
+
+Unzip Command:
+	unzip images.zip : used to unzip the command
+
+Cat Command: 
+	cat : concatenate files directly from the terminal.
+	      It’s mainly used to preview a file without opening a graphical text editor
+	cat long_text_file.txt : to check the content in the file
+
+History Command:
+	history : This command displays an enumerated list with the commands you’ve used in the past
+
+Tail Command:
+	tail long.txt : It only outputs the last lines. 
+			By default, it prints the last 10 lines, but you can modify that number with -n 
+
+Head Command: 
+	head long.txt : head outputs the first 10 lines of a text file.
+			But you can set any number of lines you want to display with the -n flag
+
+
+
+
+
+Summary:
+
+
+ls		Lists the content of a directory
+alias		Define or display aliases
+unalias		Remove alias definitions
+pwd		Prints the working directory
+cd		Changes directory
+cp		Copies files and directories
+rm		Remove files and directories
+mv		Moves (renames) files and directories
+mkdir		Creates directories
+man		Displays manual page of other commands
+touch		Creates empty files
+chmod		Changes file permissions
+./		Runs an executable
+exit		Exits the current shell session
+sudo		Executes commands as superuser
+shutdown	Shutdowns your machine
+htop		        Displays processes and resources information
+unzip		   	Extracts compressed ZIP files
+apt, yum, 		Package managers
+echo			Displays lines of text
+cat			Prints file contents
+ps			Reports shell processes status
+kill			Terminates programs
+ping			Tests network connectivity
+vim			Efficient text editing
+history			Shows a list of previous commands
+passwd			Changes user password
+which			Returns the full binary path of a program
+shred			Overwrites a file to hide its contents
+less			Inspects files interactively
+tail			Displays last lines of a file
+head			Displays first lines of a file
+grep			Prints lines that match patterns
+whoami			Outputs username
+whatis			Shows single-line descriptions
+wc			Word count files
+uname			Displays OS information
+neofetch		Displays OS and hardware information
+find			Searches for files that follow a pattern
+wget			Retrieves files from the internet
+clear           	Clear the Screen
+ls -a           	Open the hidden file
+touch .filename 	Create Hidden File
+history         	It will show all history 
+cd/bin/fol      	Absolute path
+cd  filename    	Relative path 
+mv filename foldername  Move one folder to another folder
+cp filename foldername  We can do copy from one folder to another folder
+touch filename.txt      you can create file  
+whoami                  To check the who am i
+ls -ltr                 To check the list of the file 
+echo $0                 To check the shell name
+hostname -i             To know ip address
+who
+whoami
+users
+uname -r
+ls
+ls -a
+ls -R
+ls -l
+~                    It defined Home directry
+/                    root directry
+sudo apt install upgrade
+sudo apt update
+date
+sudo  date --set="10 Feb 2012"    set for new date
+sudo apt install ncal   install calender
+cal
+figlet NAGEN BISWAL    For any design
+factor 2762            find the factor value
+ps
+ps aux                 what are process are running
+top                    what are task are running
+dpkg --list
+sudo apt install vlc
+sudo apt install imagemagick
+sudo shutdown now -c,r
+echo Hi I am Nagen Biswal >portfolio.txt
+figlet Nagen > fig.txt
+sudo ifconfig            to know ur ip address
+sudo ifconfig > ipinfo.txt
+
+cat filename.txt   to read the file
+head-2 fig.txt
+tail-3 ipinfo.txt  to read the bellow 3 lines
+more ipinfo.txt
+less ipinfo.txt         it will open another window
+nano new.txt            new file will open you can write here
+
+:wq!                 To quit from this
+df                 To know disk things
+free               memory things
+du                 files and sizes
+du -sh            size of disk
+
+lsblk        
+
+lsusb                     usb ports active 
+lspci                      information
+sudo dmidecode -t system   system information
+sudo dmidecode -t system   memory information
+sudo dmidecode -t bios     Bios Information
+sudo dmidecode -t processor Processor Information
+cat /etc/*release*          which machine and version
+lsb_release -a             
+ls -ltrh                  it will show actual size in k
+find ./ -name nagen.txt    we can find file  
+cat filename.txt    it will show what written in this file
+tty                    
+echo "I'm nagen biswal" >/dev/pts/1
+clear >/dev/pts/1
+ctrl+alt+t    to open the terminal in ubantu
+ctrl+d         To close the terminal in ubantu
+d   ==>ordinary file
+-   ==>ordinary file
+l   ==>link file
+
+c   ===>Character special file
+b   ===>block special file
+s   ==>socket file
+cd . 
+cd ..
+cd ../../../..
+cd ~
+cd
+cd -
+which touch
+which ls
+which mkdir
+cat hosts    ====>ip address to know
+cat filename.txt ===>to open txt file
+cat >> filename.txt   ===>to write the file without opening
+tty    ===>> terminal file
+fd     ===>> Floppy drive related file
+hd     ====>>Hard disk related file
+ram    ====>Ram Related file
+stdin   =====>standard input device file(keyboard)
+stdout   ====>>standard output  device file (terminal/monitor)
+stderr    ====>Standard error device  file(terminal/monitor)
+
+mnt      ====>>mounting
+ps -ef    ====>>to boot starting
+man ls   ===>it will show all internal commands
+man ls > ls_doc.txt   ===>.it will store this file in this folder
+getit ls_docs.txt    ===>>it will open this file we can change anything
+
+touch server_$(date +%d%m%Y).log
+touch server_$(date +%d%m%Y%H%M%S).log  
+mkdir -p heroines/{sunny,katrina,kareena,karishma}/{jan,feb,mar,apr,may,jun,july,aug,sep,oct,nov,dec}_202{0,1,2}
+
+
+touch heroines/{sunny,katrina,kareena,karishma}/{jan,feb,mar,apr,may,jun,july,aug,sep,oct,nov,dec}_202{0,1,2}/schedule_{1..31}.txt
+
+mkdir dir{1..5}
+
+touch dir{1..5}/{a..c}.txt
+
+mkdir -p x/x1/x1{1,2 x/x2/x2{1,2} y/y1/y1{1,2} y/y2
+
+rm -r filename    ===>if file not empty we can do this command for delete this file
+
+rm command can work for any directory whether it is empty or not
+rmdir can work only to remove empty directories
+
+
+to remove multiple file one file inside another then also -r is not required
+
+
+rm -r /    ====> It is very danger command not use in real enviroment
+
+rm -ri filename   ===>>It will ask for delete or remove 
+
+rm -rf filename    ====>It will not showing any error
+
+rm -r dir{2,4,5}    ===>..it will delete 2,4,5 directory
+
+rmdir d*      ====>it will delete all d directory
+
+
+rmdir d*n     ====>it will delete starts with d and ends with n
+
+cat filename.txt   ===>>it will show what are text are inside available
+
+gedit filename.txt   ===>>It will able to edit the file 
+
+cat > file1.txt     ====>>here you can write any paragraph after completion just enter (ctrl+D)  to comeout outside, if already file is their then old data removed 
+
+cat >> file1.txt    ===>> Intead of overwritting, If we want to perform append operation then we should use  >> symbol.
+
+
+Q.what is te difference between usage of > and >> with cat command
+
+> meant for overwritting of existing data
+>> meant for appending new data to existing data
+
+
+Q. If we are using touch command to create 3file, but the file is already there with some content then what will happend?
+   1.error
+   2.the old data will be removed so that file will become empty
+   3.Nothing will be happened to the file but timestamp will be changed.
+   
+
+  -rw-rw-r-- 1 nagenbiswal nagenbiswal 92 Aug 16 14:30 file1.txt
+  -rw-rw-r-- 1 nagenbiswal nagenbiswal 92 Aug 16 14:43 file1.txt
+   1.To create an empty stamp
+   2.To change timestamp of an existing file
+
+
+gedit      ====>widows Notepad
+
+gedit file2.txt
+then write something
+then save ctrl+save
+then quit enter ctrl+q
+
+
+nano file4.txt
+ctrl+o  ===>to save
+ctrl+x  ===>exit
+
+
+How to view content of the file:
+--------------------------------
+we can content of the file by using the following commands:
+
+1.cat  
+2.tac
+3.rev
+4.head
+5.tail
+6.more
+7.less
+8.
+
+
+cat < file1.txt  ====>where less tha is optional 
+cat file1.txt   ====>to see the file
+cat -n file1.txt ===>To see the  file
+
+while displaying data if we want numbers,we have to use -n option
+cat -n file1.txt 
+
+Numbering skipped for Blank lines then we should use -b option
+
+To multiple files content simultaneously  
+
+
+
+various utilities of cat command:
+--------------------------------
+1. create a new file word some content
+  
+ cat > file1.txt
+ required data
+ ctrl+d   -->to save and exit
+
+
+2.To append some extra to an existing file:
+------------------------------------------
+cat >> file1.txt
+some more extra data
+ctrl+d ---> to save and exit
+
+
+3.To view content of the file:
+-----------------------------
+cat < file1.txt  or cat file1.txt
+
+4.To copy content of one file to another file:
+---------------------------------------------
+cp file1.txt file2.txt
+cat file1.txt > file2.txt
+
+5.To append one file content to anopther
+---------------------------------------
+cat file1.txt >> file2.txt
+
+6.To copy content of multiple files in a single file
+-----------------------------------------------------
+a.txt b.txt c.txt d.txt > total.txt 
+
+a.txt b.txt c.txt d.txt >> total.txt    Instead of Overwrite
+
+
+cat is the word derived from con"cat"enation
+
+
+
+2.tac command:
+-------------
+It is reverse of cat .
+It will display file content in reverse order of lines.
+This is vertical reversal.
+unny
+BUnny
+Vinny
+Piunny
+Gunny
+Bunny
+Sambhu
+
+Sambhu
+Bunny
+Gunny
+Piunny
+Vinny
+BUnny
+sunny
+
+
+
+3.rev command:
+-------------
+rev means reversal.
+Here each line will be reversed.
+It is horizontal reversal.
+
+
+
+sdiff command
+-------------
+we can use sdiff command for side by side comparision(parallel comparision)
+
+It is exactly same as diff with -y option
+
+
+
+2 window is their
+-----------------
+
+ctrl+w+w  -----> to go next window
+:q       ------>To close current window
+:qa      ------->To close all windows
+:qa!     ------>To close all windows forefully
+
+
+comm command:
+-------------
+By using this command we can compare data of two files
+
+
+vomm file1.txt file2.txt 
+Result will be displayed in 3 columns
+column-1: Data present in only in file2 but not in file2
+column-2: Data present in only in file2 but not in file1
+column-3:Common data of both files
+
+with comm command we can use the following options:
+
+-1 ===> If we don't want to display column-1
+-2 ===> If we don't want to display column-2
+-3 ===> If we don't want to display column-3
+-12 ===> If we don't want to display columns 1&2.
+-13 ===>We don't want to display column 1&3.
+
+
+1.hard link:
+---------
+To create link file ln nagen1.txt nagen1Ln.txt
+
+
+
+2.soft link:
+-----------
+This is just like windows Desktop shortcut
+A softlink file is a ponter to another file
+It is also known as symbolic link
+we can create softlink file by using ln command but with -s option
+
+
+ln -s original_file_name soft_link_file_name
+
+
+Important conclusions about softskilnk file:
+--------------------------------------------
+1Bothe Original file and softlink file have
+1. Different inode numbers
+2.Difference file sizes
+3.Difference time stamps
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Shell scripting
+--------------
+1.shell is responsible to read command provided by user.
+2.shell will check whether the command is valid or not.
+3.shell will check whether the command is properly used or not.
+4.If everthing is proper then shell interprets(converts) that command into kernal unserstable
+
+
+
+
+
+
+Types of shell
+------
+1.Bourne shell
+2.Bash shell ----->>>It sis default shell
+3.Korn shell
+4.Cshell
+5.Tshell
+6.Zshell
+etc
+
+
+
+1.Bourne shell:
+--------------
+It is developed by Stephen Bourne.
+This is first shell which is developed for UNIX.
+By using sh command we can access this shell.
+
+Shell Script
+------------
+It sis nothing buyt it is a file like 
+It is a program which contain a group of command
+
+Test.java
+test.py
+test.sh
+
+
+
+vi editor
+geditor
+nano editor
+
+
+gedit test.sh
+ctrl+s ===>save
+ctrl+q  ===>quit
+
+user cannot execute this script
+user should has execute permission on this script, then only he can execute that script.
+
+chmod  u+x test2.sh
+-rw-rw-r-- 1 nagenbiswal nagenbiswal 42 Aug 19 14:55 test2.sh
+ rw- ==>User Permissions
+ r-- ==>Group permissions
+ r-- ==>Others Persmissions
+
+ sh ./test2.sh   ====>To check the value
+ bash ./test2.sh
+
+2.Bash shell
+------------
+BASH ===>Bourne Again Shell 
+It is advanced version of Bournce Shell
+This is default shell for most of the linux flavours.
+By using bash command we can access this shell.
+ 
+
+All scripting language are Interpreter 
+
+
+3. Korn Shell:
+-------------
+It is developed by David Korn
+Mostly this shell used in IBM AIX Operating System.
+By Using ksh command, we can access this shell.
+
+
+
+4.Cshell:
+--------
+Developed by Bill Joy.
+c meant for California University.
+It is also bydefacult available with UNIX.
+By using csh command we can access this Cshell.
+
+5.Tshell:
+---------
+It is advanced vesion of Cshell.
+It is most commonly used uin HP UNIX systems.
+By using tcsh command, we can access this shell.
+
+
+6.Zshell:
+---------
+Developed by Paul.
+By ousing zsh command we can access this shell.
+
+
+The most commonly used shell in linux environment is bash
+
+How to default shell in our system:-
+-----------------------------------
+echo $0   ----->>To check default shell
+echo $SHELL ----->To check Default shell
+
+we can check default shell information inside /etc/passwd file also.
+
+nagenbiswal:x:1000:1000:nagenbiswal,,,:/home/nagenbiswal:/bin/bash
+
+
+How to check all available shells in our system:
+------------------------------------------------
+
+cat /etc/shells   ---->>To check available shell
+
+# /etc/shells: valid login shells
+/bin/sh
+/bin/bash
+/usr/bin/bash
+/bin/rbash
+/usr/bin/rbash
+/usr/bin/sh
+/bin/dash
+/usr/bin/dash
+
+
+How to switch to other shells:
+------------------------------
+nagenbiswal@nagenbiswal:~$ echo $0
+bash
+nagenbiswal@nagenbiswal:~$ sh
+$  echo $0
+sh
+$ exit
+nagenbiswal@nagenbiswal:~$ echo $0
+bash
+nagenbiswal@nagenbiswal:~$ rbash
+nagenbiswal@nagenbiswal:~$ echo $0
+rbash
+nagenbiswal@nagenbiswal:~$ exit
+exit
+nagenbiswal@nagenbiswal:~$ dash
+$  echo $0
+dash
+$ 
+
+
+What is shell script:
+--------------------
+A sequence of commands saved to a file and this is nothing but shell script.
+
+Programming features also: Control statements, loops, functions, array etc
+
+
+How to write and run First shell script:
+----------------------------------------
+1)Write script
+
+vi editor
+nano editor
+geditor: ctrl+s ===>save
+         ctrl+q ==>quit
+
+test.sh:
+-------
+echo "Welcome to shell scripting"
+date
+cal 
+
+
+
+2. User to execute this script. To execute this script compulsory user should has execute permission on this file.
+
+-rw-rw-r-- 1 nagenbiswal nagenbiswal 36 Aug 19 16:55 test.sh
+
+rw-  ==>User/owner permission
+r-- ==>Group permission
+r-- ==>Others Permissions
+
+
+Run the script:
+--------------
+/usr/local/sbin
+/usr/local/bin
+/usr/sbin
+/usr/bin
+/sbin
+/bin
+/usr/games
+/usr/local/games
+/snap/bin
+/snap/bin
+
+Give the execute permission
+---------------------------
+$ chmod u+x demo.sh
+
+To run/Execute the script 
+-----------------
+./demo.sh  or bash ./test.sh   or  sh  ./demo.sh
+
+Importants of sha-Bang:
+-----------------------
+c#
+#  ---->>SHARP
+!  ----->>BANG
+#!  ----->>Sharp Bang or Sha-Bang or shebang
+
+By using sha-bang,we can specify the interpreter(command) which is responsible to execute the script.
+
+
+/bin/sh     ./demo.sh
+
+
+
+Write a python Script and execute without shabang and with shabang:
+-------------------------------------------------------------------
+
+test.sh
+
+test.py
+---------
+import random
+name = input("Enter YOur Name:")
+l = ["sunny","MIllika","Veena","Katrina","Deepika","Malika","Aalia"]
+print("Hello:", name)
+print("Congratulation....... you are going to marry",random.choice(1))
+
+
+bash  ./test.py
+
+/usr/bin/python3
+
+Q.without shabang:
+------------------
+$ /usr/bin/python3 ./test.py
+$ python3 ./test.py
+
+With shabang:
+-------------
+$ ./test.py
+
+
+Q. Consider the following script?
+
+
+magic.sh:
+---------
+#! /bin/rm
+echo "The current system date and time"
+date
+
+How to run our script from anywhere in our system directly:
+-----------------------------------------------------------
+/home/nagenbiswal/scripts  ===>test.sh
+
+touch ====>PATH Variable Location
+echo $PATH
+which touch
+
+/usr/local/sbin
+/usr/local/bin
+/usr/sbin
+/usr/bin
+/sbin
+/bin
+/usr/games
+/usr/local/games
+/snap/bin
+/snap/bin
+
+
+For any command or script, bydefault our os will check locations specified by PATH Variable.
+
+If we add our script location to PATH Variable locations, then we can run our script from anywherre
+
+
+1.session level:
+----------------
+export PATH=$PATH:/home/nagenbiswal/scripts
+
+2.How to set PATH permanently at user level:
+-------------------------------------------
+/home/nagenbiswal
+   
+       .bashrc  file
+
+.bashrc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
